@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Everest</title>
+  <!-- Import main styles -->
+  <link rel="stylesheet" href="css/style.css">
+ 
+  <!--[if lt IE 10]>
+    <link rel="stylesheet" href="assets/css/ie.css">
+  <![endif]-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__slider js-header_slider">
+      <div class="header__slider-item header__slider-item--1">
+        <div class="container header__slider-container">
+          <div class="header__slider-description col-lg-8 col-xs-12">
+            <div class="header__slider-description-wrap">
+              <div class="header__slider-title">
+                Коттеджи с отделкой
+              </div>
+              <div class="header__slider-text">
+                В нетронутом уголке<br>
+                Живой природы
+              </div>
+              <a href="#" class="header__slider-link">Смотреть</a>
+            </div>
+          </div>
+          <div class="container--flex header__slider-advantages-list">
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--closekp"></span>
+              <span class="header__slider-advantages-text">Закрытый<br> КП</span>
+              <div class="header__slider-modal">
+                <div class="header__slider-modal-img-wrap">
+                  <img class="header__slider-modal-img" src="img/header-modal1.png" alt=" " width="373" height="234">
+                </div> 
+                <div class="header__slider-modal-text">
+                  Готовые коттеджи<br>
+                  С отделкой и землей<br>
+                  В Ярославле
+                </div>
+              </div>
+            </div>
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--smartprice"></span>
+              <span class="header__slider-advantages-text">Разумные<br> цены</span>
+              <div class="header__slider-modal">
+                <div class="header__slider-modal-img-wrap">
+                  <img class="header__slider-modal-img" src="img/header-modal1.png" alt=" " width="373" height="234">
+                </div> 
+                <div class="header__slider-modal-text">
+                  Готовые коттеджи<br>
+                  С отделкой и землей<br>
+                  В Ярославле
+                </div>
+              </div>
+            </div>
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--mortgage"></span>
+              <span class="header__slider-advantages-text">Ипотека без<br> волокиты от 10%</span>
+              <div class="header__slider-modal">
+                <div class="header__slider-modal-img-wrap">
+                  <img class="header__slider-modal-img" src="img/header-modal1.png" alt=" " width="373" height="234">
+                </div> 
+                <div class="header__slider-modal-text">
+                  Готовые коттеджи<br>
+                  С отделкой и землей<br>
+                  В Ярославле
+                </div>
+              </div>
+            </div>
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--installment"></span>
+              <span class="header__slider-advantages-text">Рассрочка<br> до 8 месяцев</span>
+              <div class="header__slider-modal">
+                <div class="header__slider-modal-img-wrap">
+                  <img class="header__slider-modal-img" src="img/header-modal1.png" alt=" " width="373" height="234">
+                </div> 
+                <div class="header__slider-modal-text">
+                  Готовые коттеджи<br>
+                  С отделкой и землей<br>
+                  В Ярославле
+                </div>
+              </div>
+            </div>
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--infrastructure"></span>
+              <span class="header__slider-advantages-text">Вся необходимая<br> инфраструктура</span>
+              <div class="header__slider-modal">
+                <div class="header__slider-modal-img-wrap">
+                  <img class="header__slider-modal-img" src="img/header-modal1.png" alt=" " width="373" height="234">
+                </div> 
+                <div class="header__slider-modal-text">
+                  Готовые коттеджи<br>
+                  С отделкой и землей<br>
+                  В Ярославле
+                </div>
+              </div>
+            </div>
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--city"></span>
+              <span class="header__slider-advantages-text">Дома с землей - <br> в черте города</span>
+              <div class="header__slider-modal">
+                <div class="header__slider-modal-img-wrap">
+                  <img class="header__slider-modal-img" src="img/header-modal1.png" alt=" " width="373" height="234">
+                </div> 
+                <div class="header__slider-modal-text">
+                  Готовые коттеджи<br>
+                  С отделкой и землей<br>
+                  В Ярославле
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__slider-item header__slider-item--2">
+        <div class="container header__slider-container">
+          <div class="header__slider-description col-lg-8 col-xs-13">
+            <div class="header__slider-description-wrap">
+              <div class="header__slider-title">
+                Коттеджи с отделкой
+              </div>
+              <div class="header__slider-text">
+                В нетронутом уголке<br>
+                Живой природы
+              </div>
+              <a href="#" class="header__slider-link">Смотреть</a>
+            </div>
+          </div>
+          <div class="container--flex header__slider-advantages-list ">
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--closekp"></span>
+              <span class="header__slider-advantages-text">Закрытый<br> КП</span>
+              <div class="header__slider-modal">
+                <div class="header__slider-modal-img-wrap">
+                  <img class="header__slider-modal-img" src="img/header-modal1.png" alt=" " width="373" height="234">
+                </div>
+                <div class="header__slider-modal-text">
+                  Готовые коттеджи<br>
+                  С отделкой и землей<br>
+                  В Ярославле
+                </div>
+              </div>
+            </div>
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--smartprice"></span>
+              <span class="header__slider-advantages-text">Разумные<br> цены</span>
+            </div>
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--mortgage"></span>
+              <span class="header__slider-advantages-text">Ипотека без<br> волокиты от 10%</span>
+            </div>
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--installment"></span>
+              <span class="header__slider-advantages-text">Рассрочка<br> до 8 месяцев</span>
+            </div>
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--infrastructure"></span>
+              <span class="header__slider-advantages-text">Вся необходимая<br> инфраструктура</span>
+            </div>
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--city"></span>
+              <span class="header__slider-advantages-text">Дома с землей - <br> в черте города</span>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="header__slider-item header__slider-item--1">
+        <div class="container header__slider-container">
+          <div class="header__slider-description col-lg-8 col-xs-12">
+            <div class="header__slider-description-wrap">
+              <div class="header__slider-title">
+                Коттеджи с отделкой
+              </div>
+              <div class="header__slider-text">
+                В нетронутом уголке<br>
+                Живой природы
+              </div>
+              <a href="#" class="header__slider-link">Смотреть</a>
+            </div>
+          </div>
+          <div class="container--flex header__slider-advantages-list ">
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--closekp"></span>
+              <span class="header__slider-advantages-text">Закрытый<br> КП</span>
+              <div class="header__slider-modal">
+                <div class="header__slider-modal-img-wrap">
+                  <img class="header__slider-modal-img" src="img/header-modal1.png" alt=" " width="373" height="234">
+                </div> 
+                <div class="header__slider-modal-text">
+                  Готовые коттеджи<br>
+                  С отделкой и землей<br>
+                  В Ярославле
+                </div>
+              </div>
+            </div>
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--smartprice"></span>
+              <span class="header__slider-advantages-text">Разумные<br> цены</span>
+            </div>
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--mortgage"></span>
+              <span class="header__slider-advantages-text">Ипотека без<br> волокиты от 10%</span>
+            </div>
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--installment"></span>
+              <span class="header__slider-advantages-text">Рассрочка<br> до 8 месяцев</span>
+            </div>
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--infrastructure"></span>
+              <span class="header__slider-advantages-text">Вся необходимая<br> инфраструктура</span>
+            </div>
+            <div class="header__slider-advantages-item">
+              <span class="header__slider-advantages-img header__slider-advantages-img--city"></span>
+              <span class="header__slider-advantages-text">Дома с землей - <br> в черте города</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="header__top">
+      <div class="container container--flex">
+        <div class="header__logo">
+          <picture>
+            <source media="(min-width:320px) and (max-width:480px)" srcset="img/logo-sm.png">
+            <source media="(min-width:481px) and (max-width:1280px)" srcset="img/logo-md.png">  
+            <img srcset="img/logo.png" alt="everest" class="header__logo-img">
+          </picture>
+        </div> 
+        <nav class="header__nav js-switch-container">
+          <button class="header__nav-trigger js-switch-link" type="button" data-close_outside="true">
+            <span class="ic_menu"></span>
+            <span class="ic_close"></span>
+          </button>
+          <ul class="container--flex header__nav-list  js-switch-content ">
+            <li class="header__nav-item">
+              <a href="#company" class="header__nav-link">Компания</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#project" class="header__nav-link">Проекты</a>
+            </li>
+            <li class="header__nav-item">
+               <a href="#gallery" class="header__nav-link">Наши дома</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#township" class="header__nav-link">Наши поселки</a>
+            </li>
+          </ul>         
+        </nav>
+        <div class="header__callback js-switch-container">
+          <button class="header__callback-trigger js-switch-link" type="button" data-close_outside="true">
+            <span class="ic_phone"></span>
+          </button>
+          <div class="header__callback-wrap js-switch-content">
+            <a href="#" class="header__callback-link">Заказать звонок</a>
+            <a href="tel" class="header__callback-tel">8 800 707 09 10</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="section section--dark card-list" id="company">
+    <div class="container">
+      <p class="section__title">Почему нас выбирают</p>
+      <div class="row row-small">
+        <div class="offset-lg-1 col-lg-4 offset_ds-md-1 col-md-7 offset-xs-1 col-xs-14">
+          <div class="card">
+            <div class="card__img">
+              <img src="img/card1.jpg" alt="">
+              <span class="card__area">121м<sup>2</sup></span>
+            </div>
+            <div class="card__description">
+              <div class="card__price">3 200 000 <span class="card__price-currency"></span></div>
+              <div class="card__title">Кирпичный коттедж с гаражом</div>
+              <ul class="card__info-list container--flex">
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--people"></span>4</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--wc"></span>2</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--levels"></span>0</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--rooms"></span>6</li>
+              </ul>
+              <a href="/" class="card__link js-modal-link" data-modal="pr1">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="offset-lg-1 col-lg-4 offset_ds-md-1 col-md-7 offset-xs-1 col-xs-14">
+          <div class="card">
+            <div class="card__img">
+              <img src="img/card2.jpg" alt="">
+              <span class="card__area">102м<sup>2</sup></span>
+            </div>
+            <div class="card__description">
+              <div class="card__price">2 800 000 <span class="card__price-currency"></span></div>
+              <div class="card__title">Кирпичный коттедж с гаражом</div>
+              <ul class="card__info-list container--flex">
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--people"></span>4</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--wc"></span>2</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--levels"></span>0</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--rooms"></span>6</li>
+              </ul>
+              <a href="/" class="card__link js-modal-link" data-modal="pr2">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="offset-lg-1 col-lg-4 offset_ds-md-1 col-md-7 offset-xs-1 col-xs-14">
+          <div class="card">
+            <div class="card__img">
+              <img src="img/card3.jpg" alt="">
+              <span class="card__area">165м<sup>2</sup></span>
+            </div>
+            <div class="card__description">
+              <div class="card__price">4 000 000 <span class="card__price-currency"></span></div>
+              <div class="card__title">Кирпичный коттедж с гаражом</div>
+              <ul class="card__info-list container--flex">
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--people"></span>4</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--wc"></span>2</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--levels"></span>0</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--rooms"></span>6</li>
+              </ul>
+              <a href="/" class="card__link js-modal-link" data-modal="pr3">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="offset-lg-1 col-lg-4 offset_ds-md-1 col-md-7 offset-xs-1 col-xs-14">
+          <div class="card">
+            <div class="card__img">
+              <img src="img/card4.jpg" alt="">
+              <span class="card__area">160м<sup>2</sup></span>
+            </div>
+            <div class="card__description">
+              <div class="card__price">3 990 000 <span class="card__price-currency"></span></div>
+              <div class="card__title">Кирпичный коттедж с гаражом</div>
+              <ul class="card__info-list container--flex">
+               <li class="card__info-item"><span class="card__info-item-img card__info-item-img--people"></span>5</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--wc"></span>2</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--levels"></span>1</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--rooms"></span>6</li>
+              </ul>
+              <a href="/" class="card__link js-modal-link" data-modal="pr4">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="offset-lg-1 col-lg-4 offset_ds-md-1 col-md-7 offset-xs-1 col-xs-14">
+          <div class="card">
+            <div class="card__img">
+              <img src="img/card5.jpg" alt="">
+              <span class="card__area">140м<sup>2</sup></span>
+            </div>
+            <div class="card__description">
+              <div class="card__price">3 500 000 <span class="card__price-currency"></span></div>
+              <div class="card__title">Кирпичный коттедж с гаражом</div>
+              <ul class="card__info-list container--flex">
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--people"></span>5</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--wc"></span>2</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--levels"></span>1</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--rooms"></span>6</li>
+              </ul>
+              <a href="/" class="card__link js-modal-link" data-modal="pr5">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="offset-lg-1 col-lg-4 offset_ds-md-1 col-md-7 offset-xs-1 col-xs-14">
+          <div class="card">
+            <div class="card__img">
+              <img src="img/card6.jpg" alt="">
+              <span class="card__area">74м<sup>2</sup></span>
+            </div>
+            <div class="card__description">
+              <div class="card__price">2 285 000 <span class="card__price-currency"></span></div>
+              <div class="card__title">Кирпичный коттедж с гаражом</div>
+              <ul class="card__info-list container--flex">
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--people"></span>3</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--wc"></span>1</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--levels"></span>0</li>
+                <li class="card__info-item"><span class="card__info-item-img card__info-item-img--rooms"></span>3</li>
+              </ul>
+              <a href="/" class="card__link js-modal-link" data-modal="pr6">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="value">
+        <p class="section__title">В стоимость дома уже включено</p>
+        <div class="container--flex value__list">
+          <div class="value__item value__item--left">
+            <span class="value__item-img value__item-img--land"></span>
+            <span class="value__item-text">Земля</span>
+          </div>
+          <div class="value__item">
+            <span class="value__item-img value__item-img--gas"></span>
+            <span class="value__item-text">Газ</span>
+          </div>
+          <div class="value__item">
+            <span class="value__item-img value__item-img--windows"></span>
+            <span class="value__item-text">Окна</span>
+          </div>
+          <div class="value__item">
+            <span class="value__item-img value__item-img--septik"></span>
+            <span class="value__item-text">Септик</span>
+          </div>
+          <div class="value__item value__item--right">
+            <span class="value__item-img value__item-img--well"></span>
+            <span class="value__item-text value__item-text--well">  Скважина</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shadow"></div>
+  </section>
+  <section class="section mortgage">
+    <div class="container">
+      <p class="section__title">Расcчитаем ипотеку без визита в банк</p>
+      <div class="mortgage__block">
+        <div class="container">
+          <div class="row mortgage__row">
+            <div class="col-lg-9  offset-xs-2 col-xs-14 mortgage__calculation">
+              <div class="mortgage__calculation-wrap">
+                <p class="mortgage__calculation-text">Поможем оценить Ваши возможности<br>
+                  В получении ипотеки на дом <br> И рассчитать  платеж
+                </p>
+                <button class="btn mortgage__calculation-btn js-calculation-switch">Рассчитать</button>
+              </div>
+            </div>
+            <div class="col-lg-7 offset-xs-1 col-xs-14 mortgage__form">
+             <form action="" class="mortgage__form-wrap">
+                <legend class="mortgage__form-title">Заказать консультацию</legend>
+                <input class="mortgage__form-input mortgage__form-input--name" type="text" name="user_name" placeholder="Ваше имя" required>
+                <input class="mortgage__form-input mortgage__form-input--tel" type="text" name="user_tel" placeholder="+7 __ ___ ______ _" required>
+                <input class="btn mortgage__form-submit" type="submit" value="Отправить">
+             </form>
+            </div>
+            <div class="mortgage__img js-calculation-img">
+              <img src="img/mortgage.png" alt="">
+            </div>
+          </div>
+          <div class="partners">
+            <p class="section__title">Мы аккредитованные партнеры банков</p>
+            <div class="container--flex partners__list">
+              <div class="partners__item">
+                <img class="partners__img" src="img/rosselbank.jpg" alt="">
+              </div>
+              <div class="partners__item">
+                <img class="partners__img" src="img/VTBbank.png" alt="">
+              </div>
+               <div class="partners__item">
+                <img class="partners__img" src="img/sberlbank.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shadow"></div>
+  </section>  
+  <section class="section project" id="project">
+    <div class="container">
+      <p class="section__title">Спроектируем дом по Вашим эскизам</p>
+      <div class="project__block">
+        <div class="container">
+          <div class="row project__row">
+            <div class="col-lg-9  offset-xs-2 col-xs-14 project__calculation">
+              <div class="project__calculation-wrap">
+                <p class="project__calculation-text">Доработет выбранный Вами проект<br>
+                  или разработает его с нуля <br> штатный архитектор
+                </p>
+                <button class="btn project__calculation-btn">Рассчитать</button>
+              </div>
+            </div>
+            <div class="col-lg-7 offset-xs-1 col-xs-14 project__form">
+             <form action="" class="project__form-wrap">
+                <legend class="project__form-title">Консультация архитектора</legend>
+                <input class="project__form-input--name" type="text" name="user_name" placeholder="Ваше имя" required>
+                <input class="project__form-input--tel" type="text" name="user_tel" placeholder="+7 __ ___ ______ _" required>
+                <input class="btn project__form-submit" type="submit" value="Отправить">
+             </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shadow"></div>
+  </section>
+  <section class="section township" id="township">
+    <div class="township__wrap">
+    <div class="container">
+      <p class="section__title">Наши коттеджные поселки</p>
+      <div class="township__list">
+        <div class="township__item">
+          <div class="township__item-wrap clear">
+            <div class="township__img">
+              <img src="img/township1.jpg">
+            </div>
+            <div class="township__info">
+              <div class="township__title">Лебедево</div>
+              <div class="township__description">Закрытый коттеджный поселок<br> в черте Ярославля</div>
+              <a href="#" class="btn township__link js-modal-link-simple" data-modal="0">Узнать больше</a>
+            </div>
+          </div>
+          <div class="township__camera">
+            <div class="township__camera-wrap">
+              <div class="township__camera-img"></div>
+              <a href="#" class="township__camera-link">Смотри online</a>
+            </div>
+          </div>
+        </div>
+        <div class="township__item">
+          <div class="township__item-wrap clear">
+            <div class="township__img">
+              <img src="img/township2.jpg">
+            </div>
+            <div class="township__info">
+              <div class="township__title">Новые ткачи</div>
+              <div class="township__description">Закрытый коттеджный поселок<br> в черте Ярославля</div>
+              <a href="#" class="btn township__link js-modal-link-simple" data-modal="1">Узнать больше</a>
+            </div>
+          </div>
+          <div class="township__camera">
+            <div class="township__camera-wrap">
+              <div class="township__camera-img"></div>
+              <a href="#" class="township__camera-link">Смотри online</a>
+            </div>
+          </div>
+        </div>
+        <div class="township__item">
+          <div class="township__item-wrap clear">
+            <div class="township__img">
+              <img src="img/township2.jpg">
+            </div>
+            <div class="township__info">
+              <div class="township__title">Новое Зоволжье</div>
+              <div class="township__description">Закрытый коттеджный поселок<br> в черте Ярославля</div>
+              <a href="#" class="btn township__link js-modal-link-simple" data-modal="2">Узнать больше</a>
+            </div>
+          </div>
+          <div class="township__camera">
+            <div class="township__camera-wrap">
+              <div class="township__camera-img"></div>
+              <a href="#" class="township__camera-link">Смотри online</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal js-modal-simple js-switch-content">
+      <div class="modal__wrap js-modal-township">
+        <div class="modal__top clear">
+          <div class="modal__top-item modal__top-item--name js-modal-name"></div>
+          <div class="modal__top-item modal__top-item--call">Заказать звонок</div>
+          <div class="modal__top-item modal__top-item--tel">8 800 707 09 10</div>
+          <button class="modal__top-item modal__top-item--close js-switch-close">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 40 40" xml:space="preserve">
+              <path d="M40,32.2c0,0.9-0.3,1.7-0.9,2.3l-4.6,4.6c-0.6,0.6-1.4,0.9-2.3,0.9c-0.9,0-1.7-0.3-2.3-0.9L20,29.2l-9.9,9.9
+              C9.5,39.7,8.7,40,7.8,40c-0.9,0-1.7-0.3-2.3-0.9l-4.6-4.6C0.3,33.8,0,33.1,0,32.2c0-0.9,0.3-1.7,0.9-2.3l9.9-9.9l-9.9-9.9
+              C0.3,9.5,0,8.7,0,7.8c0-0.9,0.3-1.7,0.9-2.3l4.6-4.6C6.2,0.3,6.9,0,7.8,0c0.9,0,1.7,0.3,2.3,0.9l9.9,9.9l9.9-9.9
+             C30.5,0.3,31.3,0,32.2,0c0.9,0,1.7,0.3,2.3,0.9l4.6,4.6C39.7,6.2,40,6.9,40,7.8c0,0.9-0.3,1.7-0.9,2.3L29.2,20l9.9,9.9
+              C39.7,30.5,40,31.3,40,32.2z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="gallery__slider modal__gallery js-gallery">
+          <div class="gallery__slider-item">
+            <div class="col-lg-16 gallery__slider-col">
+              <div class="gallery__slider-frame">
+               <img class="gallery__slider-img" src="img/lebedevo/img1_bg.jpg" alt="gallery">
+              </div>
+            </div>
+          </div>
+          <div class="gallery__slider-item">
+            <div class="col-lg-8 gallery__slider-col">
+              <div class="gallery__slider-frame">
+                <img class="gallery__slider-img" src="img/lebedevo/img2_sm.jpg" alt="gallery">
+              </div>
+            </div>
+            <div class="col-lg-8 gallery__slider-col">
+              <div class="gallery__slider-frame">
+                <img class="gallery__slider-img" src="img/lebedevo/img3_sm.jpg" alt="gallery">
+              </div>
+            </div>
+            <div class="col-lg-8 gallery__slider-col">
+              <div class="gallery__slider-frame">
+                <img class="gallery__slider-img" src="img/lebedevo/img4_sm.jpg" alt="gallery">
+              </div>
+            </div>
+            <div class="col-lg-8 gallery__slider-col">
+              <div class="gallery__slider-frame">
+                <img class="gallery__slider-img" src="img/lebedevo/img5_sm.jpg" alt="gallery">
+              </div>
+            </div>
+          </div>
+          <div class="gallery__slider-item row">
+            <div class="col-lg-8 gallery__slider-col">
+              <div class="gallery__slider-frame">
+                <img class="gallery__slider-img" src="img/lebedevo/img2_sm.jpg" alt="gallery">
+              </div>
+            </div>
+            <div class="col-lg-8 gallery__slider-col">
+              <div class="gallery__slider-frame">
+                <img class="gallery__slider-img" src="img/lebedevo/img3_sm.jpg" alt="gallery">
+              </div>
+            </div>
+            <div class="col-lg-8 gallery__slider-col">
+              <div class="gallery__slider-frame">
+                <img class="gallery__slider-img" src="img/lebedevo/img4_sm.jpg" alt="gallery">
+              </div>
+            </div>
+            <div class="col-lg-8 gallery__slider-col">
+              <div class="gallery__slider-frame">
+                <img class="gallery__slider-img" src="img/lebedevo/img5_sm.jpg" alt="gallery">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal__content">
+          <div class="container--flex modal__advantages-list">
+            <div class="modal__advantages-item"><img src="img/lebedevo/advantages1.png" alt="" class="modal__advantages-img"></div>
+            <div class="modal__advantages-item"><img src="img/lebedevo/advantages2.png" alt="" class="modal__advantages-img"></div>
+            <div class="modal__advantages-item"><img src="img/lebedevo/advantages3.png" alt="" class="modal__advantages-img"></div>
+            <div class="modal__advantages-item"><img src="img/lebedevo/advantages4.png" alt="" class="modal__advantages-img"></div>
+          </div>
+          <div class="modal__description js-modal-desciption">
+
+          </div>
+          <div class="modal__form container--flex js-modal-form">
+            <input type="text" class="modal__input" name="user_name" placeholder="Ваше имя" required>
+            <input type="text" class="modal__input" name="user_tel" placeholder="Ваш телефон" required>
+            <input type="text" class="modal__variant js-modal-variant">
+            <input type="submit" class="btn modal__submit" value="Узнать подробности">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section--dark gallery" id="gallery">
+    <div class="container">
+      <p class="section__title gallery__title">Галерея построенных домов</p>
+      <p class="gallery__text">Более 200 готовых домов в 5 коттеджных поселках</p>
+      <div class="gallery__slider js-gallery">
+        <div class="gallery__slider-item">
+          <div class="col-lg-16 gallery__slider-col">
+            <div class="gallery__slider-frame">
+             <img class="gallery__slider-img" src="img/gallery-slider_bg-1.jpg" alt="gallery">
+            </div>
+          </div>
+        </div>
+        <div class="gallery__slider-item">
+          <div class="col-lg-8 gallery__slider-col">
+            <div class="gallery__slider-frame">
+              <img class="gallery__slider-img" src="img/gallery-slider_sm-2.jpg" alt="gallery">
+            </div>
+          </div>
+          <div class="col-lg-8 gallery__slider-col">
+            <div class="gallery__slider-frame">
+              <img class="gallery__slider-img" src="img/gallery-slider_sm-3.jpg" alt="gallery">
+            </div>
+          </div>
+          <div class="col-lg-8 gallery__slider-col">
+            <div class="gallery__slider-frame">
+              <img class="gallery__slider-img" src="img/gallery-slider_sm-4.jpg" alt="gallery">
+            </div>
+          </div>
+          <div class="col-lg-8 gallery__slider-col">
+            <div class="gallery__slider-frame">
+              <img class="gallery__slider-img" src="img/gallery-slider_sm-5.jpg" alt="gallery">
+            </div>
+          </div>
+        </div>
+         <div class="gallery__slider-item row">
+          <div class="col-lg-8 gallery__slider-col">
+            <div class="gallery__slider-frame">
+              <img class="gallery__slider-img" src="img/gallery-slider_sm-2.jpg" alt="gallery">
+            </div>
+          </div>
+          <div class="col-lg-8 gallery__slider-col">
+            <div class="gallery__slider-frame">
+              <img class="gallery__slider-img" src="img/lebedevo/img2_sm.jpg" alt="gallery">
+            </div>
+          </div>
+          <div class="col-lg-8 gallery__slider-col">
+            <div class="gallery__slider-frame">
+              <img class="gallery__slider-img" src="img/lebedevo/img2_sm.jpg" alt="gallery">
+            </div>
+          </div>
+          <div class="col-lg-8 gallery__slider-col">
+            <div class="gallery__slider-frame">
+              <img class="gallery__slider-img" src="img/lebedevo/img2_sm.jpg" alt="gallery">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section reviews">
+    <div class="container">
+      <p class="section__title">Отзывы наших клиентов</p>
+      <div class="reviews__video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GONLJvyS8sA" frameborder="0" gesture="media" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="reviews__container">
+      <div class="reviews__slider js-review_slider">
+        <div class="reviews__slider-item clear">
+          <div class="reviews__slider-img">
+            <img src="img/review1.jpg" alt="">
+          </div>
+          <div class="reviews__slider-text">
+            <cite class="reviews__slider-author">Иван Сергеевич</cite>
+            <blockquote class="reviews__slider-review"> Мне все понравилось Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, omnis error perferendis tempora quaerat reprehenderit dignissimos ab, praesentium quisquam incidunt sed repudiandae nesciunt libero sapiente veritatis consectetur ducimus quibusdam ipsam.</p>
+            </blockquote>
+          </div>
+        </div>
+        <div class="reviews__slider-item clear">
+          <div class="reviews__slider-img">
+            <img src="" alt="">
+          </div>
+          <div class="reviews__slider-text">
+            <cite class="reviews__slider-author">Иван Петрович</cite>
+            <blockquote class="reviews__slider-review"> Мне все понравилось Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, omnis error perferendis tempora quaerat reprehenderit dignissimos ab, praesentium quisquam incidunt sed repudiandae nesciunt libero sapiente veritatis consectetur ducimus quibusdam ipsam.</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container--flex partners__list social__list">
+        <div class="social__item">
+          <a href="www.instagram.com" class="social__link">Instagram</a>
+        </div>
+        <div class="social__item">
+          <a href="vk.com" class="social__link">VK</a>
+        </div>
+        <div class="social__item">
+          <a href="facebook.com" class="social__link">Facebook</a>
+        </div>
+      </div>
+      <button type="button" class="reviews__form-link js-switch-link" data-close_outside="true">Добавить отзыв</button>
+      <div class="review__modal-form-wrap js-switch-content">
+        <button type="button" class="review__modal-btn js-switch-close"></button>
+        <div class="feedback__send">
+          <p class="review__modal-form-title">Напишите ваш отзыв</p>
+          <form action="/" class="review__modal-form">
+            <input class="review__modal-form-input" type="text" name="user_name" placeholder="Имя и фамилия" required>
+            <input class="review__modal-form-input" type="email" name="user_email" placeholder="Ваш email" required>
+            <textarea class="review__modal-form-textarea" name="user_info" placeholder="Ваш отзыв" required></textarea>
+            <input class="review__modal-form-input review__modal-form-input--file" type="file" name="user_file">
+            <input class="btn review__modal-form-btn" type="submit" value="Отправить">
+           </form>
+        </div>
+    </div>
+    </div>
+    
+  </section>
+  <section class="section section--dark contacts">
+    <div class="container contacts__container">
+      <p class="section__title">Контакты</p>
+      <a href="#" class="btn-scrollup">Наверх</a>
+      <div class="contacts__map" id="map"></div>
+      <div class="container--flex contacts__flex">
+        <div class="contacts__address">
+          <div class="contacts__address-item">
+            Ярославль, ул. Революционная 18
+            <span class="contacts__address-tel">8 800 707 09 10</span>
+          </div>
+          <div class="contacts__address-item">
+            Архангельск, ул. Поморская 20, оф 7
+            <span class="contacts__address-tel">8 800 707 09 10</span>
+          </div>
+        </div>
+        <form action="" class="contacts__form">
+            <input class="contacts__form-input contacts__form-input--name" type="text" name="user_name" placeholder="Ваше имя" required>
+            <input class="contacts__form-input contacts__form-input--tel" type="text" name="user_tel" placeholder="+7 __ ___ ______ _" required>
+            <input class="contacts__form-submit" type="submit" value="Заказать звонок">
+        </form>
+      </div>
+    </div>
+    <div class="shadow contacts__shadow"></div>
+  </section>
+
+<script src="js/projects.js"></script>
+<script src="js/slick.js"></script> 
+<script src="js/script.js"></script>
+<script src="js/modals.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5FBDFmR4yO5tuOgFfqpqg-9IvpCTNHYU&callback=initMap"></script>
+ <script src="js/map.js"></script>
+</body>
+</html>

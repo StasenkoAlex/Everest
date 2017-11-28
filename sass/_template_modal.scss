@@ -1,0 +1,336 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+  overflow-y: auto;
+
+  &.is-active {
+    display: block;
+  }
+}
+
+.modal__wrap {
+  margin-bottom: 50px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -682px;
+  padding: 3px;
+  width: 1364px;
+  background-color: #fff;
+  box-shadow: 0 0 73px rgba(0,0,0,0.5);
+}
+
+
+.modal__top {
+  position: absolute;
+  z-index: 10;
+  top: -40px;
+  left: -10px;
+  right: -10px;
+}
+
+.modal__top-item {
+  padding: 9px 0;
+  float: left;
+  font-size: 35px;
+  text-align: center;
+  line-height: 1;
+  color: #545454;
+  cursor: pointer;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 21%, rgba(246,246,246,1) 48%, rgba(243,243,243,1) 71%, rgba(243,243,243,1) 100%);
+
+  &--name {
+    padding-left: 50px;
+    width: 30%;
+    text-align: left;
+    clip-path: polygon(0% 0%, 98% 0%, 91% 100%, 0% 100%);
+  }
+
+  &--call {
+    margin-left: -35px;
+    width: 40%;
+    clip-path: polygon(7% 0%, 98% 0%, 92% 100%, 2% 100%);
+  }
+
+  &--tel {
+    margin-left: -35px;
+    width: 24%;
+    clip-path: polygon(11% 0%, 98% 0%, 89% 100%, 2% 100%);
+  }
+
+  &--close {
+    margin-left: -28px;
+    width: 13%;
+    color: #000;
+     clip-path: polygon(19% 0%, 100% 0%, 100% 100%, 2% 100%);
+    svg {
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+      fill: currentColor;
+    }
+    &:hover,
+    &:focus {
+      color: #e61f26;
+    }
+  }
+}
+
+.modal__gallery {
+  //height: 520px;
+}
+
+.modal__content {
+  padding: 50px 100px 120px;
+}
+
+ 
+.modal__advantages-list {
+  margin-bottom: 55px;
+}
+
+.modal__description {
+  margin-bottom: 90px;
+  font-family: 'Myriad Pro';
+  font-size: 30px;
+  line-height: 1.17;
+  color: #000;
+
+  p:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.modal__form {
+
+}
+
+.modal__input[type="text"] {
+  margin-right: 60px;
+  width: 320px;
+  border: 1px solid #000;
+}
+
+::-webkit-input-placeholder {
+  font-family: 'Myriad Pro';
+  font-size: 30px;
+  line-height: 1.17;
+  font-weight: bold;
+  color: #d1d1d1;
+}
+::-moz-placeholder {
+  font-family: 'Myriad Pro';
+  font-size: 30px;
+  line-height: 1.17;
+  font-weight: bold;
+  color: #d1d1d1;
+}
+:-ms-input-placeholder {
+  font-family: 'Myriad Pro';
+  font-size: 30px;
+  line-height: 1.17;
+  font-weight: bold;
+  color: #d1d1d1;
+}
+:-moz-placeholder { 
+  font-family: 'Myriad Pro';
+  font-size: 30px;
+  line-height: 1.17;
+  font-weight: bold;
+  color: #d1d1d1;
+}
+
+.modal__variant {
+  display: none;
+}
+
+.modal__submit {
+  font-family: 'VoxRegular';
+  padding: 20px 0;
+  display: inline-block;
+  width: 260px;
+  font-size: 26px;
+  line-height: 1;
+  height: auto;
+  vertical-align: middle;
+}
+
+
+@media screen and (max-width: 1920px)  {
+
+  .modal__wrap {
+    top: 50px;
+    margin-left: 0;
+    padding: 3px;
+    width: 1000px;
+    transform: translateX(-50%);
+  }
+
+  .modal__top {
+    top: -30px;
+  }
+
+  .modal__top-item {
+    font-size: 24px;
+
+    &--name {
+   
+    }
+
+    &--call {
+      margin-left: -30px;
+    }
+
+    &--tel {
+      margin-left: -32px;
+      width: 26%;
+    }
+
+    &--close {
+      margin-left: -26px;
+      width: 12.5%;
+      clip-path: polygon(21% 0%, 100% 0%, 100% 100%, 2% 100%);
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .modal__gallery {
+    //height: 370px;
+  }
+
+  .modal__content {
+    padding: 30px 50px 80px;
+  }
+ 
+  .modal__advantages-list {
+    margin-bottom: 35px;
+  }
+
+  .modal__description {
+    margin-bottom: 50px;
+    font-size: 24px;
+
+    p:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .modal__input[type="text"] {
+    margin-right: auto;
+    width: 30%;
+    font-size: 24px;
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 24px;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 24px;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 24px;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 24px;
+  }
+
+  .modal__submit {
+    width: 30%;
+    font-size: 22px; 
+  }	
+}
+
+@media screen and (max-width: 1280px) {
+	
+}
+
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+
+  .modal__wrap {
+    width: 80%;
+  }
+
+	.modal__top-item {
+    clip-path: none;
+
+    &--name {
+      width: 80%;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    &--call {
+      display: none;
+    }
+
+    &--tel {
+      display: none;
+    }
+
+    &--close {
+      margin-left: 1%;
+      width: 19%;
+    }
+  }
+
+  .modal__content {
+    padding: 20px 30px 40px;
+  }
+
+  .modal__advantages-list {
+    display: none;
+  }
+
+  .modal__description {
+    margin-bottom: 20px;
+    font-size: 18px;
+    p {
+      margin-bottom: 8px;
+    }
+  }
+
+  .modal__form {
+    flex-wrap: wrap;
+  }
+
+  .modal__input[type="text"] {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 18px;
+
+    &:nth-of-type(2) {
+      margin-bottom: 30px;
+    }
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 18px;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 18px;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 18px;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 18px;
+  }
+
+  .modal__submit {
+    padding: 15px 0;
+    width: 100%;
+    font-size: 18px;
+  }
+}
+

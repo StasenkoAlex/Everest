@@ -1,0 +1,241 @@
+.mortgage {
+
+}
+
+.mortgage__row {
+	position: relative;
+	margin-bottom: 100px;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+
+.mortgage__calculation {
+	position: relative;
+	z-index: 5;
+
+  &::after {
+		content: '';
+		position: absolute;
+		z-index: 100;
+		top: 0;
+		left: -330px;
+		width: 340px;
+		height: 100%;
+		background-color: #4c4c4c;
+	}
+}
+
+
+.mortgage__calculation-wrap {
+	clip-path: polygon(0% 0%, 98% 0%, 52% 100%, 0% 100%);
+	background-color: #4c4c4c;
+}
+
+
+.mortgage__calculation-text {
+	margin-bottom: 70px;
+	padding-top: 50px;
+	font-size: 45px;
+	line-height: 2.2;
+	color: #fff;
+}
+
+.mortgage__calculation-btn {
+	width: 800px;
+  text-align: left;
+  padding-left: 160px;
+	clip-path: polygon(14% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.mortgage__form {
+	background-color: #fff;
+	position: static;
+
+
+	&::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -11%;
+    background-color: #fff;
+    height: 100%;
+    width: 12%;
+	}
+}
+
+.mortgage__form-wrap {
+	padding-top: 55px;
+	padding-right: 118px;
+}
+
+.mortgage__form-title {
+	margin-bottom: 33px;
+  font-size: 45px;
+  line-height: 1;
+  color: #000;
+  text-align: center;
+}
+
+.mortgage__form-input {
+
+  &--name {
+  	margin-bottom: 40px;
+  }
+
+  &--tel {
+  	margin-bottom: 60px;
+  }
+}
+
+.mortgage__form-submit {
+	position: absolute;
+  bottom: 0;
+  right: 0;
+	width: 489px;
+	text-align: center;
+	clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.mortgage__img {
+  display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+  height: 100%;
+	z-index: 3;
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 1920px)  {
+  .mortgage__calculation-text {
+  	font-size: 30px;
+  }
+
+  .mortgage__calculation-btn {
+  	width: 460px;
+    padding-left: 92px;
+    text-align: left;
+  }
+
+  .mortgage__form-title {
+  	font-size: 30px;
+  }
+
+  .mortgage__form-input {
+  	&--name {
+  		margin-bottom: 30px;
+  	}
+  }
+
+  .mortgage__form-submit {
+  	width: 360px;
+  }
+
+
+  .mortgage__img {
+  	img {
+  		height: 396px;
+  	}
+  }
+}
+
+@media screen and (max-width: 1280px) {
+
+  .mortgage__calculation-text {
+  	margin-bottom: 40px;
+  	font-size: 24px;
+  }
+
+  .mortgage__calculation-btn {
+  	width: 300px;
+    padding-left: 80px;
+    clip-path: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .mortgage__form-wrap {
+  	padding-top: 40px;
+    padding-right: 90px;
+  }
+
+
+
+  .mortgage__form-title {
+  	font-size: 24px;
+  }
+
+  .mortgage__form-input {
+  	font-size: 20px;
+    padding: 15px 25px;
+  	&--name {
+  		margin-bottom: 20px;
+  	}
+  }
+
+  .mortgage__form-submit {
+  	width: 260px;
+    clip-path: polygon(17% 0%, 100% 0%, 100% 100%, 0% 100%)
+  }
+
+  .mortgage__img {
+
+  	img {
+  		height: 303px;
+  	}
+  }
+
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+
+  .mortgage__row {
+    margin-bottom: 40px;
+  }
+
+	.mortgage__calculation {
+    background-color: #4c4c4c;
+	}
+
+  .mortgage__calculation-wrap {
+    clip-path: none;
+    background-color: none;
+  }
+
+  .mortgage__calculation-text {
+  	margin-bottom: 0;
+  	padding-top: 30px;
+  	padding-bottom: 30px;
+  	font-size: 24px;
+  	line-height: 1.5;
+  }
+
+  .mortgage__calculation-btn {
+  	width: 260px;
+  	clip-path: none;
+  	display: none;
+  }
+
+  .mortgage__img {
+  	display: none;
+  }
+
+  .mortgage__form-wrap {
+  	padding-right: 0;
+  	padding-bottom: 40px;
+  }
+
+  .mortgage__form-input {
+  	&--tel {
+  		margin-bottom: 35px;
+  	}
+  }
+
+  .mortgage__form-submit {
+  	position: static;
+  	float: none;
+  	width: 100%;
+  	clip-path: none;
+  }
+}
+

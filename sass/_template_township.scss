@@ -1,0 +1,200 @@
+.township {
+
+}
+
+.township__wrap {
+  overflow-x: hidden;
+}
+
+.township__list {
+  
+}
+
+.township__item {
+  position: relative;
+  margin-bottom: 170px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.73);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 55%;
+    width: 40%;
+    height: 100%;
+    background-color: #cfcfcf;
+  }
+}
+
+.township__item-wrap {
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  background-color: #fff;
+  clip-path: polygon(0% 0%, 100% 0%, 77.4% 100%, 0% 100%);
+}
+
+.township__img {
+  float: left;
+}
+
+.township__info {
+  float: left;
+  padding-top: 15px;
+  padding-left: 50px;
+}
+
+.township__title {
+  margin-bottom: 25px;
+  font-size: 65px;
+  line-height: 1;
+}
+
+.township__description {
+  font-family: 'Myriad Pro';
+  font-size: 40px;
+  color: #5d5d5d;
+}
+
+.township__link {
+  position: absolute;
+  bottom: 0;
+  right: 230px;
+  padding-left: 25px;
+  width: 450px;
+  height: auto;
+  font-size: 50px;
+}
+
+.township__camera {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 64%;
+  width: 810px;
+  height: 100%;
+  background-color: #5e5e5e;
+  clip-path: polygon(42% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.township__camera-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 18px 40px 18px 0;
+  width: 440px;
+  font-family: 'Myriad Pro';
+  font-size: 50px;
+  color: #fff;
+  border: 3px solid #fff;
+  text-align: right;
+
+}
+
+
+
+
+@media screen and (max-width: 1920px)  {
+
+  .township__item {
+    margin-bottom: 60px;
+  }
+
+  .township__img {
+    width: 30%;
+  }
+
+  .township__title {
+    margin-bottom: 10px;
+    font-size: 45px;
+  }
+
+  .township__description {
+    font-size: 32px;
+  }
+
+  .township__link {
+    font-size: 30px;
+    width: 340px;
+    right: 95px;
+  }
+
+  .township__camera {
+    width: 480px;
+    clip-path: polygon(43.5% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+
+  .township__camera-link {
+    font-size: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+
+  .township__item::after {
+    display: none;
+  }
+
+  .township__item-wrap {
+    width: 100%;
+    clip-path: none;
+  }
+
+  .township__link {
+    right: 0;
+    width: 300px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .township__camera {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+
+  .township__item {
+    margin-bottom: 45px;
+  }
+
+  .township__img {
+    float: none;
+    width: 100%;
+    height: 270px;
+    text-align: center;
+    background-color: #eeeeee;
+    overflow: hidden;
+  }
+
+  .township__info {
+    float: none;
+    padding: 20px 15px;
+  }
+
+  .township__title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .township__description {
+    font-size: 22px;
+    margin-bottom: 35px;
+    text-align: center;
+
+    br {
+      display: none;
+    }
+  }
+
+  .township__link {
+    position: static;
+    width: auto;
+    font-size: 22px;
+  }
+}
+

@@ -1,0 +1,150 @@
+@import url("reset.css");
+@import url("grid.css");
+
+$active-color: black;
+
+html,
+body {
+	width: 100%;
+	height: 100%; 
+	font-family: 'VoxRegular', sans-serif;
+	font-size: 40px;
+	line-height: 1.2;
+  color: #000;
+}
+
+body.is-scroll {
+	overflow: hidden;
+}
+
+a { 
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	padding: 0;
+	border: none;
+  background-color: transparent;
+}
+
+button:focus {
+	outline: none;
+}
+
+ul {
+	margin: 0;
+	list-style: none;
+}
+
+
+e[type="button"] {
+	cursor:hand;
+	cursor:pointer;
+}
+
+.section {
+	padding: 75px 0 0;
+	background-color: #fff;
+	&--dark {
+		background-color: #f9f9f9;
+	}
+}
+
+
+.section__title {
+	margin-bottom: 85px;
+	font-size: 80px;
+	line-height: 1;
+	color: #000;
+	text-align: center;
+}
+
+.btn {
+  display: block;
+  padding: 21px 0;
+  height: 102px;
+  font-family: 'Myriad Pro';
+  font-size: 60px;
+  line-height: 1;
+  color: #fff;
+  background-color: #e61f26;
+
+  &:hover {
+  	box-shadow: 0 0 7px #ff2a32;
+  }
+  
+}
+
+.shadow {
+	width: 100%;
+	height: 15px;
+	box-shadow: 3.5px 3.5px 5px rgba(0, 0, 0, 0.75);
+	opacity: 0.5;
+}
+
+.btn-scrollup {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	bottom: 0px;
+	right: 10px;
+	padding: 10px 80px 10px 20px;
+	font-family: 'Myriad Pro';
+	font-size: 30px;
+	line-height: 1;
+	color: #fff;
+	background: #f4766a url("../img/ic_arrow-up.svg") no-repeat 135px center;
+  transition: all 0.4s ease-out;
+
+	&.is-active {
+		bottom: 50px; 
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1920px)  {
+
+	.section {
+	  padding: 65px 0 0px;
+	}
+
+  .section__title {
+	  margin-bottom: 60px;
+	  font-size: 60px;
+  }
+
+  .btn {
+    padding: 18px 0;
+    height: 76px;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .btn {
+    padding: 14px 0;
+    font-size: 24px;
+    height: 52px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+  .section {
+	  padding: 40px 0 0;
+	}
+
+  .section__title {
+	  margin-bottom: 30px;
+	  font-size: 32px;
+  }
+
+  .btn-scrollup {
+  	padding-right: 50px;
+    font-size: 20px;
+    background-position: 100px center;
+    background-size: 20px;
+  }
+
+  
+}
