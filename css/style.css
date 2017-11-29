@@ -1772,7 +1772,8 @@ label {
   padding-left: 25px;
   width: 450px;
   height: auto;
-  font-size: 50px; }
+  font-size: 50px;
+  text-align: left; }
 
 .township__camera {
   position: absolute;
@@ -2277,20 +2278,23 @@ label {
   height: 100%;
   background: rgba(0, 0, 0, 0.65);
   overflow-y: auto; }
-  .modal.is-active {
+  .modal.is-opened {
     display: block; }
 
 .modal__wrap {
-  margin-bottom: 50px;
   position: absolute;
   top: 100px;
   left: 50%;
+  margin-bottom: 50px;
   margin-left: -682px;
   padding: 3px;
   width: 1364px;
+  display: none;
   background-color: #fff;
   -webkit-box-shadow: 0 0 73px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 73px rgba(0, 0, 0, 0.5); }
+  .modal__wrap.is-active {
+    display: block; }
 
 .modal__top {
   position: absolute;
