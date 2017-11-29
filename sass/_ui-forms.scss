@@ -7,9 +7,9 @@ input[type="password"],
 input[type="email"],
 textarea {
   font-family: 'Myriad Pro';
-	padding: 15px 30px;
+	padding: 22px 30px;
 	width: 100%;
-	font-size: 30px;
+	font-size: 45px;
 	line-height: 1;
   background-color: #fff;
   border: 2px solid transparent;
@@ -41,21 +41,29 @@ label {
 
 ::-webkit-input-placeholder {
   font-family: 'Myriad Pro';
-  font-size: 28px;
+  font-size: 45px;
   line-height: 1;
+  color: #d1d1d1;
 }
-
 ::-moz-placeholder {
-   
+  font-family: 'Myriad Pro';
+  font-size: 45px;
+  line-height: 1;
+  color: #d1d1d1;
 }
-
+:-ms-input-placeholder {
+  font-family: 'Myriad Pro';
+  font-size: 45px;
+  line-height: 1;
+  color: #d1d1d1;
+}
 :-moz-placeholder { 
-  
-} 
-
-:-ms-input-placeholder { 
-  
+  font-family: 'Myriad Pro';
+  font-size: 45px;
+  line-height: 1;
+  color: #d1d1d1;
 }
+
 
 
 @media screen and (max-width: 1920px)  {

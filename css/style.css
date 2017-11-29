@@ -170,9 +170,9 @@ input[type="password"],
 input[type="email"],
 textarea {
   font-family: 'Myriad Pro';
-  padding: 15px 30px;
+  padding: 22px 30px;
   width: 100%;
-  font-size: 30px;
+  font-size: 45px;
   line-height: 1;
   background-color: #fff;
   border: 2px solid transparent;
@@ -200,8 +200,27 @@ label {
 
 ::-webkit-input-placeholder {
   font-family: 'Myriad Pro';
-  font-size: 28px;
-  line-height: 1; }
+  font-size: 45px;
+  line-height: 1;
+  color: #d1d1d1; }
+
+::-moz-placeholder {
+  font-family: 'Myriad Pro';
+  font-size: 45px;
+  line-height: 1;
+  color: #d1d1d1; }
+
+:-ms-input-placeholder {
+  font-family: 'Myriad Pro';
+  font-size: 45px;
+  line-height: 1;
+  color: #d1d1d1; }
+
+:-moz-placeholder {
+  font-family: 'Myriad Pro';
+  font-size: 45px;
+  line-height: 1;
+  color: #d1d1d1; }
 
 @media screen and (max-width: 1920px) {
   input[type="text"],
@@ -1128,7 +1147,7 @@ label {
 
 .card__info-item-img {
   display: inline-block;
-  margin-right: 10px;
+  margin-left: 10px;
   vertical-align: baseline;
   background-repeat: no-repeat;
   background-position: right center; }
@@ -2366,6 +2385,8 @@ label {
       flex-wrap: wrap; }
 
 .modal__input[type="text"] {
+  padding: 15px 20px;
+  font-size: 30px;
   margin-right: 60px;
   width: 320px;
   border: 1px solid #000;
@@ -2376,28 +2397,28 @@ label {
   margin-bottom: 50px;
   width: 360px; }
 
-::-webkit-input-placeholder {
+.modal__input[type="text"]::-webkit-input-placeholder {
   font-family: 'Myriad Pro';
   font-size: 30px;
   line-height: 1.17;
   font-weight: bold;
   color: #d1d1d1; }
 
-::-moz-placeholder {
+.modal__input[type="text"]::-moz-placeholder {
   font-family: 'Myriad Pro';
   font-size: 30px;
   line-height: 1.17;
   font-weight: bold;
   color: #d1d1d1; }
 
-:-ms-input-placeholder {
+.modal__input[type="text"]:-ms-input-placeholder {
   font-family: 'Myriad Pro';
   font-size: 30px;
   line-height: 1.17;
   font-weight: bold;
   color: #d1d1d1; }
 
-:-moz-placeholder {
+.modal__input[type="text"]:-moz-placeholder {
   font-family: 'Myriad Pro';
   font-size: 30px;
   line-height: 1.17;
