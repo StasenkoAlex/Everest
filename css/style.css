@@ -1156,7 +1156,8 @@ label {
   line-height: 1;
   text-transform: uppercase;
   color: #fff;
-  background-color: #e61f26; }
+  background-color: #e61f26;
+  cursor: pointer; }
   .card__link:hover {
     -webkit-box-shadow: 0 0 7px 0 rgba(255, 42, 50, 0.7);
             box-shadow: 0 0 7px 0 rgba(255, 42, 50, 0.7); }
@@ -2341,6 +2342,8 @@ label {
 
 .modal__content {
   padding: 50px 100px 120px; }
+  .modal__content--expanded {
+    padding: 35px 0 100px; }
 
 .modal__advantages-list {
   margin-bottom: 55px; }
@@ -2353,11 +2356,25 @@ label {
   color: #000; }
   .modal__description p:not(:last-child) {
     margin-bottom: 40px; }
+  .modal__description--expanded {
+    margin-bottom: 60px;
+    text-align: center; }
+
+.modal__form {
+  margin-top: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .modal__input[type="text"] {
   margin-right: 60px;
   width: 320px;
-  border: 1px solid #000; }
+  border: 1px solid #000;
+  border-radius: 2px; }
+
+.modal__input--expanded[type="text"] {
+  margin-right: 0;
+  margin-bottom: 50px;
+  width: 360px; }
 
 ::-webkit-input-placeholder {
   font-family: 'Myriad Pro';
@@ -2398,7 +2415,168 @@ label {
   font-size: 26px;
   line-height: 1;
   height: auto;
-  vertical-align: middle; }
+  vertical-align: middle;
+  border-radius: 2px; }
+  .modal__submit--expanded {
+    width: 390px; }
+
+.modal__content-left {
+  width: 68.75%;
+  padding: 0 60px;
+  border-right: 1px solid #616161; }
+
+.modal__content-right {
+  width: 31.25%;
+  padding: 0 40px 0 20px; }
+
+.modal__content-container {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.modal__content-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.modal__content-project-title {
+  margin-bottom: 25px;
+  font-size: 35px; }
+  .modal__content-project-title--tabs {
+    color: #545454;
+    text-align: center;
+    cursor: pointer; }
+
+.modal__content-project-list {
+  margin-bottom: auto;
+  font-family: 'Myriad Pro';
+  font-size: 25px; }
+  .modal__content-project-list li {
+    position: relative;
+    padding-left: 20px; }
+    .modal__content-project-list li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 50%;
+      width: 10px;
+      height: 1px;
+      background-color: #000; }
+  .modal__content-project-list:last-of-type {
+    margin-top: 40px; }
+
+.modal__content-project-price {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: block;
+  padding-left: 45px;
+  font-size: 25px; }
+
+.modal__content-project-estimate {
+  font-size: 20px; }
+
+.modal__content-project-link {
+  display: inline-block;
+  padding: 14px 37px;
+  font-family: 'Myriad Pro';
+  font-size: 20px;
+  line-height: 1;
+  color: #e61f26;
+  border: 1px solid #f02626; }
+  .modal__content-project-link:hover {
+    -webkit-box-shadow: inset 0 0 5px 0 rgba(255, 42, 50, 0.3), 0 0 5px 0 rgba(255, 42, 50, 0.3);
+            box-shadow: inset 0 0 5px 0 rgba(255, 42, 50, 0.3), 0 0 5px 0 rgba(255, 42, 50, 0.3); }
+
+.modal__content-container-tab {
+  height: 100%; }
+  .modal__content-container-tab p:not(:first-of-type) {
+    margin-bottom: 35px;
+    font-family: 'Myriad Pro';
+    font-size: 30px;
+    line-height: 1.2; }
+  .modal__content-container-tab .uppercase {
+    text-transform: uppercase; }
+  .modal__content-container-tab ul {
+    font-family: 'Myriad Pro';
+    font-size: 30px;
+    line-height: 1.2; }
+
+.modal__content-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .modal__content-flex--row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+
+.modal__content-project-tabs {
+  margin-top: 50px;
+  font-family: 'Myriad Pro';
+  font-size: 25px; }
+
+.modal__content-project-tab {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer; }
+
+.modal__content-project-tab-img {
+  width: 57px;
+  width: 15%;
+  height: 57px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+  .modal__content-project-tab-img--mortgage {
+    background-image: url("../img/ic_tab1.png"); }
+  .modal__content-project-tab-img--architect {
+    background-image: url("../img/ic_tab2.png"); }
+  .modal__content-project-tab-img--houses {
+    background-image: url("../img/ic_tab3.png"); }
+  .modal__content-project-tab-img--reviews {
+    background-image: url("../img/ic_tab4.png"); }
+  .modal__content-project-tab-img--documents {
+    background-image: url("../img/ic_tab5.png"); }
+
+.modal__content-project-tab.is-active .modal__content-project-tab-img {
+  background-image: url("../img/ic_tab-arrow.png");
+  background-size: 60%; }
+
+.modal__content-project-tab-text {
+  width: 85%;
+  margin-left: 10px;
+  text-decoration: underline; }
+  .modal__content-project-tab-text--mortgage, .modal__content-project-tab-text--documents {
+    color: #139c01; }
+  .modal__content-project-tab-text--architect, .modal__content-project-tab-text--houses, .modal__content-project-tab-text--reviews {
+    color: #ff6c0a; }
+
+.modal__partners-list {
+  margin-bottom: 65px; }
+
+.modal__partners-item {
+  width: 30%; }
+
+.modal__reviews-video {
+  width: 100%;
+  height: 75%; }
 
 @media screen and (max-width: 1920px) {
   .modal__wrap {
@@ -2435,24 +2613,65 @@ label {
     .modal__description p:not(:last-child) {
       margin-bottom: 15px; }
   .modal__input[type="text"] {
+    padding: 10px 15px;
     margin-right: auto;
     width: 30%;
-    font-size: 24px; }
+    font-size: 22px; }
   ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    font-size: 24px; }
+    font-size: 22px; }
   ::-moz-placeholder {
     /* Firefox 19+ */
-    font-size: 24px; }
+    font-size: 22px; }
   :-ms-input-placeholder {
     /* IE 10+ */
-    font-size: 24px; }
+    font-size: 22px; }
   :-moz-placeholder {
     /* Firefox 18- */
-    font-size: 24px; }
+    font-size: 22px; }
   .modal__submit {
+    padding: 13px 0;
     width: 30%;
-    font-size: 22px; } }
+    font-size: 23px; }
+  .modal__content--expanded {
+    padding: 30px 0 40px; }
+  .modal__content-project-price {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 22px; }
+  .modal__content-left {
+    padding: 0 40px; }
+  .modal__content-project-title {
+    font-size: 30px; }
+  .modal__content-project-list {
+    font-size: 22px; }
+    .modal__content-project-list:last-of-type {
+      margin-top: 20px; }
+  .modal__content-right {
+    padding: 0 20px; }
+  .modal__content-project-tabs {
+    margin-top: auto;
+    font-size: 20px; }
+  .modal__content-container-tab p:not(:first-of-type) {
+    font-size: 22px;
+    margin-bottom: 15px; }
+  .modal__content-container-tab ul {
+    font-size: 22px; }
+  .modal__content-container-tab li {
+    margin-bottom: 4px; }
+  .modal__partners-list {
+    margin-top: 10px;
+    margin-bottom: 30px; }
+  .modal__input--expanded[type="text"] {
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: 45%; }
+    .modal__input--expanded[type="text"]:first-of-type {
+      margin-right: auto; }
+  .modal__submit--expanded {
+    width: 100%; }
+  .modal__content-project-tab {
+    margin-bottom: 15px; } }
 
 @media screen and (max-width: 1024px) and (min-width: 320px) {
   .modal__wrap {
@@ -2505,4 +2724,53 @@ label {
   .modal__submit {
     padding: 15px 0;
     width: 100%;
+    font-size: 18px; }
+  .modal__content--expanded {
+    padding: 20px; }
+  .modal__content-flex--row,
+  .modal__content-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .modal__content-left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    border-right: 0;
+    padding: 0; }
+  .modal__content-right {
+    margin-bottom: 20px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    padding: 0; }
+  .modal__content-project-title {
+    font-size: 26px;
+    margin-bottom: 15px; }
+  .modal__content-project-tab-img {
+    height: 40px; }
+  .modal__content-project-tab.is-active .modal__content-project-tab-img {
+    background-size: 40% auto; }
+  .modal__content-project--light {
+    margin-bottom: 40px; }
+    .modal__content-project--light .modal__content-project-list {
+      margin-top: 0; }
+  .modal__content-project-list {
+    font-size: 18px; }
+  .modal__content-project-price {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-left: 0;
+    text-align: center; }
+  .modal__content-project-link {
+    display: block;
+    padding: 12px 0;
+    width: 100%;
+    text-align: center; }
+  .modal__content-container-tab p:not(:first-of-type) {
+    font-size: 18px;
+    margin-bottom: 10px; }
+  .modal__content-container-tab ul {
+    margin-bottom: 15px;
     font-size: 18px; } }

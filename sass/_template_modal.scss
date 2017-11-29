@@ -88,6 +88,9 @@
 
 .modal__content {
   padding: 50px 100px 120px;
+  &--expanded {
+    padding: 35px 0 100px;
+  }
 }
 
  
@@ -105,16 +108,29 @@
   p:not(:last-child) {
     margin-bottom: 40px;
   }
+
+  &--expanded {
+    margin-bottom: 60px;
+    text-align: center;
+  } 
 }
 
 .modal__form {
-
+  margin-top: auto;
+  flex-wrap: wrap;
 }
 
 .modal__input[type="text"] {
   margin-right: 60px;
   width: 320px;
   border: 1px solid #000;
+  border-radius: 2px;
+}
+
+.modal__input--expanded[type="text"] {
+  margin-right: 0;
+  margin-bottom: 50px;
+  width: 360px;
 }
 
 ::-webkit-input-placeholder {
@@ -159,6 +175,201 @@
   line-height: 1;
   height: auto;
   vertical-align: middle;
+  border-radius: 2px;
+
+  &--expanded {
+    width: 390px;
+  }
+}
+
+.modal__content-left {
+  width: 68.75%;
+  padding: 0 60px;
+  border-right: 1px solid #616161;
+}
+
+.modal__content-right {
+  width: 31.25%;
+  padding: 0 40px 0 20px;
+}
+
+.modal__content-container {
+  align-items: stretch;
+}
+
+
+.modal__content-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal__content-project-title {
+  margin-bottom: 25px;
+  font-size: 35px;
+
+  &--tabs {
+    color: #545454;
+    text-align: center; 
+    cursor: pointer
+  }
+}
+
+.modal__content-project-list {
+  margin-bottom: auto;
+  font-family: 'Myriad Pro';
+  font-size: 25px;
+
+  li {
+    position: relative;
+    padding-left: 20px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 50%;
+      width: 10px;
+      height: 1px;
+      background-color: #000;
+    }
+  }
+
+  &:last-of-type {
+    margin-top: 40px;
+  }
+}
+
+.modal__content-project-price {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: block;
+  padding-left: 45px;
+  font-size: 25px;
+}
+
+.modal__content-project-estimate {
+  font-size: 20px;
+}
+
+.modal__content-project-link {
+  display: inline-block;
+  padding: 14px 37px;
+  font-family: 'Myriad Pro';
+  font-size: 20px;
+  line-height: 1;
+  color: #e61f26;
+  border: 1px solid #f02626;
+
+  &:hover {
+    box-shadow: inset 0 0 5px 0 rgba(255, 42, 50, 0.3), 0 0 5px 0 rgba(255, 42, 50, 0.3);
+  }
+}
+
+.modal__content-container-tab {
+  height: 100%;
+  p:not(:first-of-type) {
+    margin-bottom: 35px;
+    font-family: 'Myriad Pro';
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  ul {
+    font-family: 'Myriad Pro';
+    font-size: 30px;
+    line-height: 1.2;
+  }
+}
+
+.modal__content-flex  {
+  display: flex;
+  flex-direction: column;
+
+  &--row {
+    flex-direction: row;
+  }
+}
+
+.modal__content-project-tabs {
+  margin-top: 50px;
+  font-family: 'Myriad Pro';
+  font-size: 25px;
+}
+
+.modal__content-project-tab {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal__content-project-tab-img {
+  width: 57px;
+  width: 15%;
+  height: 57px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &--mortgage {
+    background-image: url("../img/ic_tab1.png");
+  }
+
+  &--architect {
+    background-image: url("../img/ic_tab2.png");
+  }
+
+  &--houses {
+    background-image: url("../img/ic_tab3.png");
+  }
+
+  &--reviews {
+    background-image: url("../img/ic_tab4.png");
+  }
+
+  &--documents {
+    background-image: url("../img/ic_tab5.png");
+  }
+}
+
+.modal__content-project-tab.is-active {
+  .modal__content-project-tab-img {
+    background-image: url("../img/ic_tab-arrow.png");
+    background-size: 60%;
+  }
+}
+
+.modal__content-project-tab-text {
+  width: 85%;
+  margin-left: 10px;
+  text-decoration: underline;
+
+  &--mortgage,
+  &--documents {
+    color: #139c01;
+  }
+
+  &--architect,
+  &--houses,
+  &--reviews {
+    color: #ff6c0a;
+  }
+}
+
+.modal__partners-list {
+  margin-bottom: 65px;
+}
+
+.modal__partners-item {
+  width: 30%;
+}
+
+.modal__reviews-video {
+  width: 100%;
+  height: 75%;
 }
 
 
@@ -226,28 +437,104 @@
   }
 
   .modal__input[type="text"] {
+    padding: 10px 15px;
     margin-right: auto;
     width: 30%;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    font-size: 24px;
+    font-size: 22px;
   }
   ::-moz-placeholder { /* Firefox 19+ */
-    font-size: 24px;
+    font-size: 22px;
   }
   :-ms-input-placeholder { /* IE 10+ */
-    font-size: 24px;
+    font-size: 22px;
   }
   :-moz-placeholder { /* Firefox 18- */
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .modal__submit {
+    padding: 13px 0;
     width: 30%;
-    font-size: 22px; 
+    font-size: 23px; 
   }	
+
+  .modal__content--expanded {
+    padding: 30px 0 40px;
+  }
+
+  .modal__content-project-price {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+
+  .modal__content-left {
+    padding: 0 40px;
+  }
+
+  .modal__content-project-title {
+    font-size: 30px;
+  }
+
+
+  .modal__content-project-list {
+    font-size: 22px;
+
+    &:last-of-type {
+      margin-top: 20px;
+    }
+  }
+
+  .modal__content-right {
+    padding: 0 20px;
+  }
+
+  .modal__content-project-tabs {
+    margin-top: auto;
+    font-size: 20px;
+  }
+
+  .modal__content-container-tab {
+    p:not(:first-of-type) {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      font-size: 22px;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+  } 
+
+  .modal__partners-list {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .modal__input--expanded[type="text"] {
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: 45%;
+    &:first-of-type {
+      margin-right: auto;
+    }
+  }
+
+  .modal__submit--expanded {
+    width: 100%;
+  } 
+
+  .modal__content-project-tab {
+    margin-bottom: 15px; 
+  }
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -331,6 +618,82 @@
     padding: 15px 0;
     width: 100%;
     font-size: 18px;
+  }
+
+  .modal__content--expanded {
+    padding: 20px;
+  }
+
+  .modal__content-flex--row,
+  .modal__content-container {
+    flex-wrap: wrap;
+  }
+
+  .modal__content-left {
+    order: 2;
+    width: 100%;
+    border-right: 0;
+    padding: 0;
+  }
+
+  .modal__content-right {
+    margin-bottom: 20px;
+    order: 1;
+    width: 100%;
+    padding: 0;
+  }
+
+  .modal__content-project-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .modal__content-project-tab-img {
+    height: 40px;
+  }
+
+  .modal__content-project-tab.is-active .modal__content-project-tab-img {
+    background-size: 40% auto;
+  }
+
+  .modal__content-project {
+    &--light {
+      margin-bottom: 40px;
+
+      .modal__content-project-list {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .modal__content-project-list {
+    font-size: 18px;
+  }
+
+  .modal__content-project-price {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .modal__content-project-link {
+    display: block;
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .modal__content-container-tab {
+    p:not(:first-of-type) {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
   }
 }
 
