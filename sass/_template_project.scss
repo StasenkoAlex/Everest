@@ -1,15 +1,23 @@
 .project {
+  padding-bottom: 110px;
   background: url("../img/project-bg.jpg") no-repeat center;
   background-size: cover;
+}
+
+.project__title {
+  margin-bottom: 135px;
 }
 
 .project__row {
 	position: relative;
 	margin-bottom: 100px;
+  margin-right: 50px;
 	box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
 }
 
 .project__calculation {
+  padding-right: 0;
+  padding-left: 0;
 	position: relative;
 	z-index: 5;
 
@@ -18,8 +26,8 @@
 		position: absolute;
 		z-index: 100;
 		top: 0;
-		left: -329px;
-		width: 340px;
+		left: -400px;
+		width: 400px;
 		height: 100%;
 		background-color: #4c4c4c;
 	}
@@ -33,19 +41,23 @@
 
 
 .project__calculation-text {
-	margin-bottom: 70px;
-	padding-top: 50px;
-	font-size: 45px;
-	line-height: 2.2;
-	color: #fff;
+	margin-bottom: 75px;
+  padding-top: 40px;
+  font-size: 45px;
+  line-height: 2.3;
+  color: #fff;
 }
 
 .project__calculation-btn {
+  padding-left: 125px;
 	width: 600px;
-	clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+  text-align: left;
+	clip-path: polygon(14% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .project__form {
+  padding-left: 0;
+  padding-right: 0;
 	background-color: transparent;
 	position: static;
 
@@ -63,8 +75,7 @@
 }
 
 .project__form-wrap {
-	padding-top: 55px;
-	padding-right: 118px;
+  padding: 65px 120px 0 50px;
 }
 
 .project__form-title {
@@ -77,11 +88,11 @@
 
 .project__form-input {
   &--name {
-  	margin-bottom: 40px;
+  	margin-bottom: 35px;
   }
 
   &--tel {
-  	margin-bottom: 60px;
+  	//margin-bottom: 60px;
   }
 }
 
@@ -89,8 +100,9 @@
 	position: absolute;
   bottom: 0;
   right: 0;
+  padding-right: 65px;
 	width: 489px;
-	text-align: center;
+	text-align: right;
 	clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
@@ -103,7 +115,7 @@
 }
 
 
-@media screen and (max-width: 1920px)  {
+@media screen and (max-width: 1919px)  {
   .project__calculation-text {
   	font-size: 30px;
   }
@@ -137,7 +149,7 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
 
   .project__calculation-text {
   	margin-bottom: 40px;
@@ -182,7 +194,7 @@
 
 }
 
-@media screen and (max-width: 1024px) and (min-width: 320px) {
+@media screen and (max-width: 1023px) and (min-width: 320px) {
 
   .project__row {
     margin-bottom: 40px;

@@ -9,13 +9,13 @@
 	display: flex;
   align-items: center;
   justify-content: center;
-	width: 30%;
+	width: 35%;
 	min-height: 120px;
 	z-index: 1;
 	text-align: center;
 	background-color: #fff;
 	box-shadow: 3.5px 3.5px 29px rgba(0, 0, 0, 0.17);
-	transform: skewX(-30deg);
+	transform: skewX(-40deg);
 	cursor: pointer;
 	//clip-path: polygon(18% 0%, 100% 0%, 82% 100%, 0% 100%);
 
@@ -23,16 +23,19 @@
 		color: #e61f26;
 	}
   
+  &--center {
+  	width: 20%;
+  }
 }
 
 .social__link {
 	font-family: 'Myriad Pro';
 	font-size: 70px;
-  transform: skewX(30deg);
+  transform: skewX(40deg);
 }
 
 
-@media screen and (max-width: 1920px)  {
+@media screen and (max-width: 1919px)  {
 
 	.social__item {
     min-height: 100px;
@@ -43,7 +46,7 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
 	.social__list {
 		margin-bottom: 40px;
 	}
@@ -53,7 +56,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 320px) {
+@media screen and (max-width: 1023px) and (min-width: 320px) {
 	
  
   .social__item {

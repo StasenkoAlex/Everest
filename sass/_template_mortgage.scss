@@ -1,14 +1,21 @@
 .mortgage {
+  padding-top: 170px;
+}
 
+.mortgage__title {
+  margin-bottom: 105px;
 }
 
 .mortgage__row {
+  margin-right: 65px;
 	position: relative;
-	margin-bottom: 100px;
+	margin-bottom: 115px;
 	box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
 }
 
 .mortgage__calculation {
+  padding-left: 0;
+  padding-right: 0;
 	position: relative;
 	z-index: 5;
 
@@ -17,8 +24,8 @@
 		position: absolute;
 		z-index: 100;
 		top: 0;
-		left: -330px;
-		width: 340px;
+		left: -400px;
+		width: 400px;
 		height: 100%;
 		background-color: #4c4c4c;
 	}
@@ -26,27 +33,29 @@
 
 
 .mortgage__calculation-wrap {
-	clip-path: polygon(0% 0%, 98% 0%, 52% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 100% 0%, 47% 100%, 0% 100%);
 	background-color: #4c4c4c;
 }
 
 
 .mortgage__calculation-text {
 	margin-bottom: 70px;
-	padding-top: 50px;
+	padding-top: 45px;
 	font-size: 45px;
-	line-height: 2.2;
+	line-height: 2.35;
 	color: #fff;
 }
 
 .mortgage__calculation-btn {
 	width: 800px;
   text-align: left;
-  padding-left: 160px;
-	clip-path: polygon(14% 0%, 100% 0%, 100% 100%, 0% 100%);
+  padding-left: 130px;
+	clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .mortgage__form {
+  padding-right: 0;
+  padding-left: 0;
 	background-color: #fff;
 	position: static;
 
@@ -64,12 +73,11 @@
 }
 
 .mortgage__form-wrap {
-	padding-top: 55px;
-	padding-right: 118px;
+  padding: 70px 115px 0 40px;
 }
 
 .mortgage__form-title {
-	margin-bottom: 33px;
+	margin-bottom: 30px;
   font-size: 45px;
   line-height: 1;
   color: #000;
@@ -79,7 +87,7 @@
 .mortgage__form-input {
 
   &--name {
-  	margin-bottom: 40px;
+  	margin-bottom: 35px;
   }
 
   &--tel {
@@ -91,8 +99,9 @@
 	position: absolute;
   bottom: 0;
   right: 0;
+  padding-right: 65px;
 	width: 489px;
-	text-align: center;
+	text-align: right;
 	clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
@@ -107,7 +116,7 @@
 }
 
 
-@media screen and (max-width: 1920px)  {
+@media screen and (max-width: 1919px)  {
   .mortgage__calculation-text {
   	font-size: 30px;
   }
@@ -140,7 +149,7 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
 
   .mortgage__calculation-text {
   	margin-bottom: 40px;
@@ -187,7 +196,7 @@
 
 }
 
-@media screen and (max-width: 1024px) and (min-width: 320px) {
+@media screen and (max-width: 1023px) and (min-width: 320px) {
 
   .mortgage__row {
     margin-bottom: 40px;
