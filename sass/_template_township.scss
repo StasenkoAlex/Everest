@@ -1,5 +1,9 @@
 .township {
+  padding: 85px 0 210px;
+}
 
+.township__main-title {
+  margin-bottom: 140px;
 }
 
 .township__wrap {
@@ -12,7 +16,7 @@
 
 .township__item {
   position: relative;
-  margin-bottom: 170px;
+  margin-bottom: 180px;
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.73);
 
   &::after {
@@ -20,18 +24,21 @@
     position: absolute;
     top: 0;
     left: 55%;
-    width: 40%;
+    width: 100%;
     height: 100%;
     background-color: #cfcfcf;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
   }
 }
 
 .township__item-wrap {
   position: relative;
   z-index: 2;
-  width: 80%;
+  width: 95%;
   background-color: #fff;
-  clip-path: polygon(0% 0%, 100% 0%, 77.4% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 77% 100%, 0% 100%);
 }
 
 .township__img {
@@ -45,7 +52,7 @@
 }
 
 .township__title {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   font-size: 65px;
   line-height: 1;
 }
@@ -59,7 +66,7 @@
 .township__link {
   position: absolute;
   bottom: 0;
-  right: 230px;
+  right: 285px;
   padding-left: 25px;
   width: 450px;
   height: auto;
@@ -70,8 +77,9 @@
   position: absolute;
   z-index: 2;
   top: 0;
-  left: 64%;
-  width: 810px;
+  margin-left: -380px;
+  left: 95%;
+  width: 1000px;
   height: 100%;
   background-color: #5e5e5e;
   clip-path: polygon(42% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -81,8 +89,8 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 18px 40px 18px 0;
-  width: 440px;
+  padding: 12px 27px;
+  width: 420px;
   font-family: 'Myriad Pro';
   font-size: 50px;
   color: #fff;
@@ -94,7 +102,7 @@
 
 
 
-@media screen and (max-width: 1920px)  {
+@media screen and (max-width: 1919px)  {
 
   .township__item {
     margin-bottom: 60px;
@@ -133,7 +141,7 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
 
   .township__item::after {
     display: none;
@@ -156,7 +164,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 320px) {
+@media screen and (max-width: 1023px) and (min-width: 320px) {
 
   .township__item {
     margin-bottom: 45px;

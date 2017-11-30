@@ -44,7 +44,7 @@ e[type="button"] {
 }
 
 .section {
-	padding: 75px 0 0;
+	padding: 95px 0 0;
 	background-color: #fff;
 	&--dark {
 		background-color: #f9f9f9;
@@ -53,7 +53,7 @@ e[type="button"] {
 
 
 .section__title {
-	margin-bottom: 85px;
+	margin-bottom: 120px;
 	font-size: 80px;
 	line-height: 1;
 	color: #000;
@@ -103,7 +103,7 @@ e[type="button"] {
 	}
 }
 
-@media screen and (max-width: 1920px)  {
+@media screen and (max-width: 1919px)  {
 
 	.section {
 	  padding: 65px 0 0px;
@@ -121,7 +121,7 @@ e[type="button"] {
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .btn {
     padding: 14px 0;
     font-size: 24px;
@@ -129,7 +129,7 @@ e[type="button"] {
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 320px) {
+@media screen and (max-width: 1023px) and (min-width: 320px) {
   .section {
 	  padding: 40px 0 0;
 	}
