@@ -4,16 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Everest</title>
-  <!-- Import main styles -->
   <link rel="stylesheet" href="css/style.css">
- 
-  <!--[if lt IE 10]>
-    <link rel="stylesheet" href="assets/css/ie.css">
-  <![endif]-->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -605,7 +597,7 @@
             <div class="township__info">
               <div class="township__title">Лебедево</div>
               <div class="township__description">Закрытый коттеджный поселок<br> в черте Ярославля</div>
-              <a href="#" class="btn township__link js-modal-link-simple" data-modal="0">Узнать больше</a>
+              <button class="btn township__link js-modal-link" type="button" data-window="modal-simple" data-content="simpleLebedevo">Узнать больше</button>
             </div>
           </div>
           <div class="township__camera">
@@ -623,7 +615,7 @@
             <div class="township__info">
               <div class="township__title">Новые ткачи</div>
               <div class="township__description">Закрытый коттеджный поселок<br> в черте Ярославля</div>
-              <a href="#" class="btn township__link js-modal-link-simple" data-modal="1">Узнать больше</a>
+              <button class="btn township__link js-modal-link" type="button" data-window="modal-simple" data-content="simpleNewTkachi">Узнать больше</button>
             </div>
           </div>
           <div class="township__camera">
@@ -641,7 +633,7 @@
             <div class="township__info">
               <div class="township__title">Новое Зоволжье</div>
               <div class="township__description">Закрытый коттеджный поселок<br> в черте Ярославля</div>
-              <a href="#" class="btn township__link js-modal-link-simple" data-modal="2">Узнать больше</a>
+              <button class="btn township__link js-modal-link" type="button" data-window="modal-simple" data-content="simpleZavolje">Узнать больше</button>
             </div>
           </div>
           <div class="township__camera">
@@ -743,7 +735,7 @@
           </div>
           <div class="reviews__slider-text">
             <cite class="reviews__slider-author">Иван Сергеевич</cite>
-            <blockquote class="reviews__slider-review"> Мне все понравилось Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, omnis error perferendis tempora quaerat reprehenderit dignissimos ab, praesentium quisquam incidunt sed repudiandae nesciunt libero sapiente veritatis consectetur ducimus quibusdam ipsam.</p>
+            <blockquote class="reviews__slider-review"> Мне все понравилось Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, omnis error perferendis tempora quaerat reprehenderit dignissimos ab, praesentium quisquam incidunt sed repudiandae nesciunt libero sapiente veritatis consectetur ducimus quibusdam ipsam.
             </blockquote>
           </div>
         </div>
@@ -753,7 +745,7 @@
           </div>
           <div class="reviews__slider-text">
             <cite class="reviews__slider-author">Иван Петрович</cite>
-            <blockquote class="reviews__slider-review"> Мне все понравилось Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, omnis error perferendis tempora quaerat reprehenderit dignissimos ab, praesentium quisquam incidunt sed repudiandae nesciunt libero sapiente veritatis consectetur ducimus quibusdam ipsam.</p>
+            <blockquote class="reviews__slider-review"> Мне все понравилось Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, omnis error perferendis tempora quaerat reprehenderit dignissimos ab, praesentium quisquam incidunt sed repudiandae nesciunt libero sapiente veritatis consectetur ducimus quibusdam ipsam.
             </blockquote>
           </div>
         </div>
@@ -814,310 +806,22 @@
     </div>
     <div class="shadow contacts__shadow"></div>
   </section>
-
-  <div class="modal js-modal-simple js-switch-content">
-    <div class="modal__wrap">
-      <div class="modal__top clear">
-        <div class="modal__top-item modal__top-item--name js-modal-name"></div>
-        <div class="modal__top-item modal__top-item--call">Заказать звонок</div>
-        <div class="modal__top-item modal__top-item--tel">8 800 707 09 10</div>
-        <button class="modal__top-item modal__top-item--close js-switch-close">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 40 40" xml:space="preserve">
-            <path d="M40,32.2c0,0.9-0.3,1.7-0.9,2.3l-4.6,4.6c-0.6,0.6-1.4,0.9-2.3,0.9c-0.9,0-1.7-0.3-2.3-0.9L20,29.2l-9.9,9.9
-              C9.5,39.7,8.7,40,7.8,40c-0.9,0-1.7-0.3-2.3-0.9l-4.6-4.6C0.3,33.8,0,33.1,0,32.2c0-0.9,0.3-1.7,0.9-2.3l9.9-9.9l-9.9-9.9
-              C0.3,9.5,0,8.7,0,7.8c0-0.9,0.3-1.7,0.9-2.3l4.6-4.6C6.2,0.3,6.9,0,7.8,0c0.9,0,1.7,0.3,2.3,0.9l9.9,9.9l9.9-9.9
-             C30.5,0.3,31.3,0,32.2,0c0.9,0,1.7,0.3,2.3,0.9l4.6,4.6C39.7,6.2,40,6.9,40,7.8c0,0.9-0.3,1.7-0.9,2.3L29.2,20l9.9,9.9
-              C39.7,30.5,40,31.3,40,32.2z"/>
-          </svg>
-        </button>
-      </div>
-      <div class="gallery__slider modal__gallery js-gallery">
-        <div class="gallery__slider-item">
-          <div class="col-lg-16 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/lebedevo/img1_bg.jpg" alt="gallery">
-            </div>
-          </div>
-        </div>
-        <div class="gallery__slider-item">
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/lebedevo/img2_sm.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/lebedevo/img3_sm.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/lebedevo/img4_sm.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/lebedevo/img5_sm.jpg" alt="gallery">
-            </div>
-          </div>
-        </div>
-        <div class="gallery__slider-item row">
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/lebedevo/img2_sm.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/lebedevo/img3_sm.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/lebedevo/img4_sm.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/lebedevo/img5_sm.jpg" alt="gallery">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal__content">
-        <div class="container--flex modal__advantages-list">
-          <div class="modal__advantages-item"><img src="img/lebedevo/advantages1.png" alt="" class="modal__advantages-img"></div>
-          <div class="modal__advantages-item"><img src="img/lebedevo/advantages2.png" alt="" class="modal__advantages-img"></div>
-          <div class="modal__advantages-item"><img src="img/lebedevo/advantages3.png" alt="" class="modal__advantages-img"></div>
-          <div class="modal__advantages-item"><img src="img/lebedevo/advantages4.png" alt="" class="modal__advantages-img"></div>
-        </div>
-        <div class="modal__description js-modal-desciption">
-
-        </div>
-        <form class="modal__form container--flex js-modal-form">
-          <input type="text" class="modal__input" name="user_name" placeholder="Ваше имя" required>
-          <input type="text" class="modal__input" name="user_tel" placeholder="Ваш телефон" required>
-          <input type="text" class="modal__variant js-modal-variant">
-          <input type="submit" class="btn modal__submit" value="Узнать подробности">
-        </form>
-      </div>
-    </div>
+  
+  <div class="modal js-modal">
+    <div id="modal-simple" class="modal__wrap js-modal-simple"></div>
   </div>
-
-  <div class="modal js-modal-expaned js-switch-content">
-    <div class="modal__wrap">
-      <div class="modal__top clear">
-        <div class="modal__top-item modal__top-item--name js-modal-name"></div>
-        <div class="modal__top-item modal__top-item--call">Заказать звонок</div>
-        <div class="modal__top-item modal__top-item--tel">8 800 707 09 10</div>
-        <button class="modal__top-item modal__top-item--close js-switch-close">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 40 40" xml:space="preserve">
-            <path d="M40,32.2c0,0.9-0.3,1.7-0.9,2.3l-4.6,4.6c-0.6,0.6-1.4,0.9-2.3,0.9c-0.9,0-1.7-0.3-2.3-0.9L20,29.2l-9.9,9.9
-              C9.5,39.7,8.7,40,7.8,40c-0.9,0-1.7-0.3-2.3-0.9l-4.6-4.6C0.3,33.8,0,33.1,0,32.2c0-0.9,0.3-1.7,0.9-2.3l9.9-9.9l-9.9-9.9
-              C0.3,9.5,0,8.7,0,7.8c0-0.9,0.3-1.7,0.9-2.3l4.6-4.6C6.2,0.3,6.9,0,7.8,0c0.9,0,1.7,0.3,2.3,0.9l9.9,9.9l9.9-9.9
-             C30.5,0.3,31.3,0,32.2,0c0.9,0,1.7,0.3,2.3,0.9l4.6,4.6C39.7,6.2,40,6.9,40,7.8c0,0.9-0.3,1.7-0.9,2.3L29.2,20l9.9,9.9
-              C39.7,30.5,40,31.3,40,32.2z"/>
-          </svg>
-        </button>
-      </div>
-      <div class="gallery__slider modal__gallery js-gallery">
-        <div class="gallery__slider-item">
-          <div class="col-lg-16 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/z245/img1_bg.jpg" alt="gallery">
-            </div>
-          </div>
-        </div>
-        <div class="gallery__slider-item">
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/z245/img2_sm.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/z245/img3_sm.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/z245/img3_sm.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/z245/img2_sm.jpg" alt="gallery">
-            </div>
-          </div>
-        </div>
-        <div class="gallery__slider-item row">
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/z245/img3_sm.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/z245/img3_sm.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/z245/img2_sm.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="col-lg-8 gallery__slider-col">
-            <div class="gallery__slider-frame">
-              <img class="gallery__slider-img" src="img/z245/img3_sm.jpg" alt="gallery">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal__content modal__content--expanded">
-        <div class="modal__description modal__description--expanded js-modal-desciption"></div>
-          <div class="modal__content-flex modal__content-flex--row">
-            <div class="modal__content-left">
-              <div class="container--flex modal__content-container js-content">
-                <div class="modal__content-project modal__content-project--light">
-                  <p class="modal__content-project-title">Этап «Коробка»</p>
-                  <ul class="modal__content-project-list">
-                    <li>Проект дома</li>
-                    <li>Закупка строительного материала</li>
-                    <li>Техника</li>
-                    <li>Строительные работы</li>
-                    <li>Гарантия</li>
-                  </ul>
-                  <div class="modal__content-project-estimate">
-                    <span class="modal__content-project-price">2 000 000</span>
-                    <a href="" class="modal__content-project-link">Получить смету</a>
-                  </div>
-                </div>
-                <div class="modal__content-project modal__content-project--full">
-                  <p class="modal__content-project-title">Этап «Под ключ»</p>
-                  <ul class="modal__content-project-list">
-                    <li>Фундамент</li>
-                    <li>Закладные под коммуникации</li>
-                    <li>Несущие стены</li>
-                    <li>Фасад</li>
-                    <li>Межкомнатные перегородки</li>
-                    <li>Межэтажные перекрытия</li>
-                  </ul>
-                  <ul class="modal__content-project-list">
-                    <li>Проект дома</li>
-                    <li>Закупка материала</li>
-                    <li>Техника</li>
-                    <li>Строительные работы</li>
-                    <li> Гарантия</li>
-                  </ul>
-                  <div class="modal__content-project-estimate">
-                    <span class="modal__content-project-price">2 500 000</span>
-                    <a href="" class="modal__content-project-link">Получить смету</a>
-                  </div>
-                </div>
-              </div>
-              <div class="modal__content-container-tab modal__content-flex js-tab-content">
-                <p class="modal__content-project-title modal__content-project-title--tab">Рассчитать ипотеку</p>
-                <p>Мы являемся аккредитованными партнерами таких банков как: Сбербанк, ВТБ24, Россельхозбанк</p>
-                <p>В режиме онлайн можем оценить Ваши возможности на получение ипотеки, а так же ежемесячный платеж за дом.</p>
-                <div class="container--flex modal__partners-list">
-                  <div class="modal__partners-item">
-                    <img class="modal__partners-img" src="img/sberlbank_modal.png" alt="">
-                  </div>
-                  <div class="modal__partners-item">
-                    <img class="modal__partners-img" src="img/VTBbank_modal.png" alt="">
-                  </div>
-                  <div class="modal__partners-item">
-                    <img class="modal__partners-img" src="img/rosselbank_modal.png" alt="">
-                  </div>
-                </div>
-                <form class="modal__form container--flex js-modal-form">
-                  <input type="text" class="modal__input modal__input--expanded" name="user_name" placeholder="Ваше имя" required>
-                  <input type="text" class="modal__input modal__input--expanded" name="user_tel" placeholder="Ваш телефон" required>
-                  <input type="text" class="modal__variant js-modal-variant">
-                  <input type="submit" class="btn modal__submit modal__submit--expanded" value="Рассчитать ипотеку">
-                </form>
-              </div>
-              <div class="modal__content-container-tab modal__content-flex js-tab-content">
-                <p class="modal__content-project-title modal__content-project-title--tab">Доработать проект</p>
-                <p>Спроектируем дом по  Вашим желаниям и представлениям с учетом наших профессиональных знаний и опыта</p>
-                <p>Доработаем выбраный Вами дом или разрабоаем его с «нуля»</p>
-                <form class="modal__form container--flex js-modal-form">
-                  <input type="text" class="modal__input modal__input--expanded" name="user_name" placeholder="Ваше имя" required>
-                  <input type="text" class="modal__input modal__input--expanded" name="user_tel" placeholder="Ваш телефон" required>
-                  <input type="text" class="modal__variant js-modal-variant">
-                  <input type="submit" class="btn modal__submit modal__submit--expanded" value="Рассчитать ипотеку">
-                </form>
-              </div>
-              <div class="modal__content-container-tab js-tab-content">
-                <p class="modal__content-project-title modal__content-project-title--tab">Построенные дома</p>
-                <div class="modal__slider-houses gallery__slider modal__gallery  js-slider-houses">
-                  <img class="modal__slider-houses-img" src="img/z245/slider_houses1.jpg" alt="">
-                  <img class="modal__slider-houses-img" src="img/z245/slider_houses1.jpg" alt="">
-                </div>
-              </div>
-              <div class="modal__content-container-tab js-tab-content">
-                <p class="modal__content-project-title modal__content-project-title--tab">Отзывы</p>
-                <div class="modal__reviews-video">
-                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GONLJvyS8sA" frameborder="0" gesture="media" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="modal__content-container-tab modal__content-flex js-tab-content">
-                <p class="modal__content-project-title modal__content-project-title--tab">Пакет документов на дом</p>
-                <p class="uppercase">ЗНАЕМ, КАК СЭКОНОМИТЬ 600 000 РУБ.</p>
-                <ul>
-                  <li>>Проводим межевание земельного участка</li>
-                  <li>>Указываем полную сумму в договоре</li>
-                  <li>>Согласуем проектную документацию</li>
-                  <li>>Оформляем разрешение на строительство</li>
-                  <li>И многое другое...</li>
-                </ul>
-                <form class="modal__form container--flex js-modal-form">
-                  <input type="text" class="modal__input modal__input--expanded" name="user_name" placeholder="Ваше имя" required>
-                  <input type="text" class="modal__input modal__input--expanded" name="user_tel" placeholder="Ваш телефон" required>
-                  <input type="text" class="modal__variant js-modal-variant">
-                  <input type="submit" class="btn modal__submit modal__submit--expanded" value="Рассчитать ипотеку">
-                </form>
-              </div>
-            </div>
-            <div class="modal__content-right">
-              <div class="modal__content-flex">
-              <p class="modal__content-project-title modal__content-project-title--tabs js-project">Проект Z245</p>
-              <ul class="modal__content-project-tabs">
-                <li class="modal__content-project-tab js-tab">
-                  <div class="modal__content-project-tab-img modal__content-project-tab-img--mortgage"></div>
-                  <div class="modal__content-project-tab-text modal__content-project-tab-text--mortgage">Расcчитать ипотеку на этот коттедж</div>
-                </li>
-                <li class="modal__content-project-tab js-tab">
-                  <div class="modal__content-project-tab-img modal__content-project-tab-img--architect"></div>
-                  <div class="modal__content-project-tab-text modal__content-project-tab-text--architect">Доработйте проект с нашим архитектором</div>
-                </li>
-                <li class="modal__content-project-tab js-tab">
-                  <div class="modal__content-project-tab-img modal__content-project-tab-img--houses"></div>
-                  <div class="modal__content-project-tab-text modal__content-project-tab-text--houses">Построенные дома по этому проекту</div>
-                </li>
-                <li class="modal__content-project-tab js-tab">
-                  <div class="modal__content-project-tab-img modal__content-project-tab-img--reviews"></div>
-                  <div class="modal__content-project-tab-text modal__content-project-tab-text--reviews">Отзывы наших клиентов</div>
-                </li>
-                <li class="modal__content-project-tab js-tab">
-                  <div class="modal__content-project-tab-img modal__content-project-tab-img--documents"></div>
-                  <div class="modal__content-project-tab-text modal__content-project-tab-text--documents">Оформляем весь пакет документов</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<script src="js/projects.js"></script>
-<script src="js/slick.js"></script> 
-<script src="js/script.js"></script>
-<script src="js/modals.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5FBDFmR4yO5tuOgFfqpqg-9IvpCTNHYU&callback=initMap"></script>
- <script src="js/map.js"></script>
+  
+  <script src="js/handlebars.min.js"></script>
+  <script src="js/simple-modal-template.js"></script>
+  <script src="js/data.js"></script>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/slick.js"></script> 
+  <script src="js/script.js"></script>
+  <script src="js/modals.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5FBDFmR4yO5tuOgFfqpqg-9IvpCTNHYU&callback=initMap"></script>
+  <script src="js/map.js"></script>
+  
 </body>
 </html>

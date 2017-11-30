@@ -2,11 +2,13 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),
     bs  = require('browser-sync');
-    //path = 'design/responsive/';
 
 gulp.task('bs', function(){
-  bs.init({
-    server:'.'
+  bs({
+    server: {
+      baseDir: './'
+    },
+    notify: false
   });
 });
 
